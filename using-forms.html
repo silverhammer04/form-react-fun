@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using Forms</title>
+    </head>
+        <h1>Let's Try the Form Things</h1>
+         
+        <h2>New User Registering Form</h2>
+        <form action="new_user.php" method="POST">
+            <label for="fname">First Name:</label> <br>
+            <input type="text" id="fname" name="fname" placeholder="enter first name"> <br><br>
+            <label for="lname">Last Name</label> <br>
+            <input type="text" id="lname" name="lname" placeholder="enter last name"> <br><br>
+            <label for="email">Email</label> <br>
+            <input type="text" id="email" name="email" placeholder="enter valid email"> <br><br>
+            <label for="phone">Phone Number:</label> <br>
+            <input type="text" id="phone" name="phone" placeholder="555-867-5309"> <br><br>
+         
+            <label for="age">Age:</label> <br>
+            <select type="dropdown" id="age" name="age" > 
+            <option value="o1">less than 18</option>
+            <option value="o2">19-50</option>
+            <option value="o3">50-80</option>
+            <option value="o4">80-RIP</option> 
+            </select>  <br> <br>   
+
+            <label for="pword">Password:</label> <br>
+            <input type="password" id="pword" name="pword"> <br><br>
+            <label for="cpword">Confirm Password:</label> <br>
+            <input type="password" id="cpword" name="cpword"> <br><br>
+            <input type="submit" value="Submit">
+        </form> <br>
+       
+        <form action="existing_user.php">
+            <fieldset>
+                <legend><h2>Login</h2></legend>
+                <label for="email">Email</label> <br>
+                <input type="text" id="email" name="email" placeholder="enter registered email"> <br><br>
+                <label for="pword">Password:</label> <br>
+                <input type="password" id="pword" name="pword">
+                <input type="submit" value="Submit"> 
+            </fieldset><br><br>
+        </form>
+    
+        <h2>Forgot your password?</h2>  
+        <form action="forgot_password.php">
+            <label for="email">Email</label> <br>
+            <input type="text" id="email" name="email" placeholder="enter registered email"> <br><br>
+
+            <textarea name="message" rows="5" cols="30" placeholder="Tell us why we should reset your password, then click reset password"></textarea> <br>
+            <input type="submit" value="reset password">
+        </form>
+
+</html>
